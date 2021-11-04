@@ -1,3 +1,14 @@
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
 nav {
   background-color: black;
   height: 50px;
@@ -6,11 +17,7 @@ nav {
   align-items: center;
   padding: 0px 10px 10px 10px;
 }
-article {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 10px;
-}
+
 .fa-youtube {
   font-size: 25px;
   color: red;
@@ -18,19 +25,24 @@ article {
 .youtubeText {
   color: white;
   font-size: 25px;
-  font-weight: bold;
 }
 .fa-search {
   font-size: 17px;
   color: white;
 }
-.fa-ellipsis-v {
+.right .fa-ellipsis-v {
   font-size: 17px;
   color: white;
 }
+
 video {
-  /* 동영상 크기 키웠다 줄였다 어떻게 하지? */
+  position: sticky;
+}
+
+article {
   display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0px 10px;
 }
 
 .tags {
@@ -39,9 +51,14 @@ video {
 }
 .vTitle {
   font-size: 18px;
+  padding: 0px 23px 0px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date {
+  font-size: 13px;
   padding: 5px 0px 0px 0px;
   color: gray;
 }
@@ -60,33 +77,134 @@ video {
   justify-content: space-around;
 }
 
+.status div {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status div p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
 hr {
   width: 100%;
   color: rgb(110, 65, 65);
+  margin: 0px;
 }
 .user {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0px;
 }
 .imgAndT {
+  width: 180px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .user img {
   border-radius: 60px;
   width: 50px;
   height: 50px;
 }
-
-p {
-  margin: 0px;
+.imgAndT div p:first-child {
+  font-weight: bold;
+}
+.imgAndT div p:last-child {
+  color: gray;
+  font-size: 15px;
 }
 
 footer {
   display: flex;
-  padding: 0px 10px;
+  flex-direction: column;
+  padding: 10px 10px;
 }
 
-footer p {
+footer > p {
   color: gray;
+}
+
+#nextItems {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+}
+
+#nextItems .item {
+  display: flex;
+}
+
+#nextItems .item div {
+  display: flex;
+  flex-direction: column;
+}
+
+#nextItems img {
+  padding: 0px 10px 0px 0px;
+  width: 180px;
+  height: 110px;
+}
+
+#nextItems .item div p:first-child {
+  font-size: 15px;
+}
+
+#nextItems .item div p:nth-child(2) {
+  font-size: 13px;
+  color: gray;
+}
+
+#nextItems .item div p:nth-child(3) {
+  font-size: 12px;
+  color: gray;
+}
+
+#nextItems .item i {
+  font-size: 14px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  top: 10px;
+}
+
+/* 화면 커졌을 때  */
+@media (min-width: 876px) {
+  nav {
+    height: 40px;
+  }
+  .fa-youtube {
+    font-size: 20px;
+    color: red;
+  }
+  .youtubeText {
+    color: white;
+    font-size: 20px;
+  }
+  .fa-search {
+    font-size: 12px;
+    color: white;
+  }
+  .right .fa-ellipsis-v {
+    font-size: 12px;
+    color: white;
+  }
+
+  /*화면이 분리되어야 함.*/
+  #container {
+    display: flex;
+  }
+
+  article {
+    width: 50vw;
+  }
+  footer {
+    width: 50vw;
+    padding: 30px;
+  }
 }
