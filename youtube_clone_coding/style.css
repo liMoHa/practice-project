@@ -1,0 +1,92 @@
+nav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+.fa-youtube {
+  font-size: 25px;
+  color: red;
+}
+.youtubeText {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.fa-search {
+  font-size: 17px;
+  color: white;
+}
+.fa-ellipsis-v {
+  font-size: 17px;
+  color: white;
+}
+video {
+  /* 동영상 크기 키웠다 줄였다 어떻게 하지? */
+  display: flex;
+}
+
+.tags {
+  color: rgb(13, 95, 218);
+  text-decoration: none;
+}
+.vTitle {
+  font-size: 18px;
+}
+
+.date {
+  padding: 5px 0px 0px 0px;
+  color: gray;
+}
+
+.textAndBtn {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  padding: 20px 10px 20px 10px;
+  color: gray;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+hr {
+  width: 100%;
+  color: rgb(110, 65, 65);
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgAndT {
+  display: flex;
+}
+.user img {
+  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  margin: 0px;
+}
+
+footer {
+  display: flex;
+  padding: 0px 10px;
+}
+
+footer p {
+  color: gray;
+}
