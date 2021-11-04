@@ -52,6 +52,7 @@ article {
 .vTitle {
   font-size: 18px;
   padding: 0px 23px 0px 0px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
