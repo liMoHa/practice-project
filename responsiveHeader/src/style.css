@@ -17,8 +17,6 @@ body {
   margin: 0px;
 }
 button {
-  /* border: 0; */
-  /* background-color: var(--navy); */
   padding: 0px;
   display: none;
 }
@@ -29,7 +27,6 @@ a {
 
 header {
   width: 100%;
-  height: 70px;
   background-color: var(--navy);
   display: flex;
   align-items: center;
@@ -54,11 +51,10 @@ header span {
 /* menu */
 header .menu {
   display: flex;
-  width: 40vw; /*이 부분은 어떻게 해야 되는지 자세히 공부하자.*/
-  justify-content: space-between;
 }
 
 header .menu a {
+  padding: calc(var(--padding) * 2) calc(var(--padding) * 2);
   color: var(--white);
 }
 /* share */
@@ -79,7 +75,6 @@ header .fa-bars {
 @media (max-width: 724px) {
   header {
     flex-direction: column;
-    height: 300px;
     justify-content: space-evenly;
   }
 
@@ -92,16 +87,15 @@ header .fa-bars {
 
   /* menu */
   header .menu {
-    flex-direction: column;
+    display: none;
     width: 100%;
-    height: 45vh;
+    flex-direction: column;
     justify-content: space-around;
     text-align: center; /* 글자 가운데로 정렬 해줘야 함. */
   }
 
   header .menu a {
-    width: 100%;
-    padding: var(--padding-little) 0px;
+    padding: var(--padding) 0;
   }
 
   header .menu a:hover {
@@ -111,6 +105,7 @@ header .fa-bars {
 
   /* share */
   header .share {
+    display: none;
     margin: 0px;
     margin-bottom: var(--padding);
     margin-top: var(--padding);
@@ -133,5 +128,10 @@ header .fa-bars {
     font-size: 18px;
     background-color: var(--navy);
     border: none;
+  }
+
+  .menu.active,
+  .share.active {
+    display: flex;
   }
 }
