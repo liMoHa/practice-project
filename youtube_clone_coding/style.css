@@ -20,7 +20,7 @@ nav {
 
 .fa-youtube {
   font-size: 25px;
-  color: red;
+  color: blue;
 }
 .youtubeText {
   color: white;
@@ -127,6 +127,7 @@ footer {
 
 footer > p {
   color: gray;
+  margin-bottom: 10px;
 }
 
 #nextItems {
@@ -179,7 +180,7 @@ footer > p {
   }
   .fa-youtube {
     font-size: 20px;
-    color: red;
+    color: blue;
   }
   .youtubeText {
     color: white;
@@ -204,6 +205,5 @@ footer > p {
   }
   footer {
     width: 50vw;
-    padding: 30px;
   }
 }

@@ -151,8 +151,13 @@ footer > p {
   width: 180px;
   height: 110px;
 }
+#nextItems .item div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-#nextItems .item div p:first-child {
+#nextItems .item div p:nth-child(1) {
   font-size: 15px;
 }
 
@@ -174,10 +179,11 @@ footer > p {
 }
 
 /* 화면 커졌을 때  */
-@media (min-width: 876px) {
+@media (min-width: 951px) {
   nav {
     height: 40px;
   }
+
   .fa-youtube {
     font-size: 20px;
     color: red;
@@ -197,6 +203,7 @@ footer > p {
 
   /*화면이 분리되어야 함.*/
   #container {
+    margin-top: 10px;
     display: flex;
   }
 

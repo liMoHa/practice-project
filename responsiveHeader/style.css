@@ -1,0 +1,137 @@
+/*:선택자 알아보기*/
+
+/*변수 지정*/
+:root {
+  --light-brown: #d4956e;
+  --navy: #253245;
+  --white: white;
+  --padding-little: 9px;
+  --padding: 10px;
+  --padding-double: 20px;
+  --big: 18px;
+  --normal: 16px;
+  --small: 14px;
+}
+
+body {
+  margin: 0px;
+}
+button {
+  /* border: 0; */
+  /* background-color: var(--navy); */
+  padding: 0px;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+
+header .logo {
+  margin-left: var(--padding-double);
+  font-size: var(--big);
+}
+
+header .fa-accusoft {
+  color: var(--light-brown);
+}
+
+header span {
+  color: var(--white);
+}
+
+/* menu */
+header .menu {
+  display: flex;
+  width: 40vw; /*이 부분은 어떻게 해야 되는지 자세히 공부하자.*/
+  justify-content: space-between;
+}
+
+header .menu a {
+  color: var(--white);
+}
+/* share */
+header .share {
+  margin-right: calc(var(--padding) * 2);
+}
+
+header .share i {
+  color: var(--white);
+  margin-left: calc(var(--padding) / 2);
+}
+
+/* bar */
+header .fa-bars {
+  /* display: none; */
+}
+
+@media (max-width: 724px) {
+  header {
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+  }
+
+  /* logo */
+  header .logo {
+    align-self: flex-start;
+    margin-top: var(--padding);
+    margin-bottom: var(--padding);
+  }
+
+  /* menu */
+  header .menu {
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+    justify-content: space-around;
+    text-align: center; /* 글자 가운데로 정렬 해줘야 함. */
+  }
+
+  header .menu a {
+    width: 100%;
+    padding: var(--padding-little) 0px;
+  }
+
+  header .menu a:hover {
+    background-color: var(--light-brown);
+    border-radius: 5px;
+  }
+
+  /* share */
+  header .share {
+    margin: 0px;
+    margin-bottom: var(--padding);
+    margin-top: var(--padding);
+  }
+  header .share a i:hover {
+    color: var(--light-brown);
+  }
+
+  /* bar */
+
+  header .bar:hover {
+    cursor: pointer;
+  }
+  header .bar {
+    display: block;
+    position: absolute;
+    top: var(--padding);
+    right: var(--padding-double);
+    color: var(--light-brown);
+    font-size: 18px;
+    background-color: var(--navy);
+    border: none;
+  }
+}
