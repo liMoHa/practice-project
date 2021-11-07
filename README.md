@@ -1,3 +1,4 @@
 # front-study
 
-- youtube 플레이 페이지 만들기 
+- youtube 재생 페이지  
+- 반응형 헤더
