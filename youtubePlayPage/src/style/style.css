@@ -1,0 +1,236 @@
+:root {
+  --padding: 10px;
+  --color-red: red;
+  --color-light-gray: #c2c1c2;
+  --color-dark-gray: #898889;
+  --color-blue: #1056ca;
+  --font-small: 13px;
+  --font-mid: 14px;
+  --font-big: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* margin과 padding이 포함됨.*/
+}
+
+body {
+  font-family: "Roboto";
+}
+/* 나중에 변경 */
+li {
+  list-style: none;
+}
+
+/* ul태그도 기본적으로 마진, 패딩이 있음. */
+
+a {
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+/*button엘리님 어떻게 하셨는지 확인해보기*/
+
+/* 1. header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  background-color: black;
+}
+
+.header__logo {
+  font-size: var(--font-big);
+}
+
+.header__logo .fa-youtube {
+  color: var(--color-red);
+}
+
+.header__logo span {
+  color: white;
+}
+
+.header__icons {
+  color: white;
+  font-size: var(--font-mid);
+}
+.header__icons i {
+  margin-right: calc(var(--padding) / 2);
+}
+
+/* 2. video 크기 제한?*/
+.player {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  text-align: center; /*자식의 item을 정렬하는 거임. 그래서 video가 아니라 이를 감싸주는 container에 작성해야 함.*/
+}
+.player video {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* 3. video-info */
+.video-info {
+  width: 100%;
+}
+/* video-info__metadata*/
+.video-info__metadata {
+  padding: var(--padding);
+}
+/* tags */
+.video-info__metadata .tags {
+  font-size: var(--font-mid);
+  color: var(--color-blue);
+}
+
+/* titleAndBtn */
+/* title이 2라인이 넘으면 ...으로 표시하기. */
+.video-info__metadata .titleAndBtn {
+  padding: var(--padding) 0 calc(var(--padding) / 2) 0;
+  display: flex;
+}
+.video-info__metadata .title {
+  margin-right: calc(var(--padding) * 2);
+}
+.video-info__metadata button {
+  height: 100%;
+}
+
+/* views */
+.video-info__metadata .views {
+  color: var(--color-light-gray);
+  font-size: var(--font-small);
+}
+
+/* video-info__actions*/
+.video-info__actions {
+  display: flex;
+  justify-content: space-around;
+  padding: calc(var(--padding) * 2);
+}
+
+.video-info__actions button {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-dark-gray);
+  font-size: var(--font-mid);
+}
+
+.video-info__actions button i {
+  /* item만 가운데 정렬 하는법*/
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.video-info__actions .active i {
+  color: var(--color-blue);
+}
+.video-info__actions .active span {
+  color: black;
+}
+
+/*여기 너무 더러움.*/
+/* video-info__chanel*/
+.video-info__chanel {
+  margin: var(--padding);
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-light-gray);
+  border-bottom: 1px solid var(--color-light-gray);
+}
+.video-info__chanel .imgAndInfo {
+  display: flex;
+  align-items: center;
+}
+
+.video-info__chanel img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.video-info__chanel .imgAndInfo .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--padding);
+}
+
+.video-info__chanel .imgAndInfo .info span:nth-child(2) {
+  color: var(--color-light-gray);
+  font-size: var(--font-mid);
+}
+
+/* subscribe button */
+.video-info__chanel button {
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+}
+
+/* 4. next-video */
+.next-video {
+  padding: var(--padding);
+  /* 이거 margin을 준 거랑 padding을 준 거랑 다른데 이유가 뭐지?*/
+  width: 100%;
+}
+.next-video > span {
+  font-size: var(--font-mid);
+  color: var(--color-dark-gray);
+}
+
+/* next-video__videos */
+.next-video__videos {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-video__videos .video {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.next-video__videos .video .img {
+  flex: 1 1 35%;
+}
+
+.next-video__videos .video .img img {
+  width: 100%;
+}
+.next-video__videos .video .metadata {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+  margin: 0 var(--padding);
+}
+
+.next-video__videos .video .metadata span:nth-child(2) {
+  font-size: var(--font-mid);
+  color: var(--color-dark-gray);
+}
+
+.next-video__videos .video .metadata span:nth-child(3) {
+  font-size: var(--font-small);
+  color: var(--color-dark-gray);
+}
+
+.next-video__videos .video button {
+  flex: 1 1 5%;
+  height: 100%;
+  padding-top: var(--padding);
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+  }
+}

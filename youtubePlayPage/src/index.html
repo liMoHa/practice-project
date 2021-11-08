@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/style.css?" rel="stylesheet" />
+    <title>youtubePlayPage</title>
+  </head>
+  <body>
+    <script src="js/main.js" defer></script>
+
+    <!-- header -->
+    <header>
+      <div class="header__logo">
+        <i class="fab fa-youtube"></i>
+        <span>Youtube</span>
+      </div>
+      <div class="header__icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- section1 -->
+    <section class="player">
+      <video controls width="100% " src="./video/video1.mp4"></video>
+    </section>
+
+    <div class="container">
+      <!--section2-->
+      <section class="video-info">
+        <!--metadata-->
+        <div class="video-info__metadata">
+          <!-- tags -->
+          <div class="tags">
+            <a href="#">#Dreamcoding</a>
+            <a href="#">#DreamCoders</a>
+            <a href="#">#Ellie</a>
+          </div>
+          <!--titleAndBtn-->
+          <div class="titleAndBtn">
+            <span class="title"
+              >Clone coding: Youtube Mobile Website 유뷰트 모바일 웹 사이트 따라
+              만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+              드림코딩과 함께하는 프론트엔드 실전 입문편
+            </span>
+            <button><i class="fas fa-caret-down"></i></button>
+          </div>
+          <!--views-->
+          <span class="views">1M views 1 month ago</span>
+        </div>
+
+        <!--actions-->
+        <ul class="video-info__actions">
+          <li>
+            <button class="active">
+              <i class="fas fa-thumbs-up"></i><span>1k</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0k</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-flag"></i><span>Report</span></button>
+          </li>
+        </ul>
+
+        <!--chanel-->
+        <div class="video-info__chanel">
+          <div class="imgAndInfo">
+            <img src="./image/woman.png" />
+            <div class="info">
+              <span>드림코딩 by 엘리</span>
+              <span>1M subscribers</span>
+            </div>
+          </div>
+          <button>subscribe</button>
+          <!--css로 대문자로 바꿀 거임.-->
+        </div>
+      </section>
+
+      <!--section3-->
+      <section class="next-video">
+        <span>Up next</span>
+        <div class="next-video__videos">
+          <div class="video video1">
+            <div class="img"><img src="./image/img1.jpg" /></div>
+            <div class="metadata">
+              <span>
+                프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹 개발
+                입문자편 강의를 시작합니다⭐(HTML, CSS, javascript + 실전
+                프로젝트)
+              </span>
+              <span>드림코딩 by 엘리</span>
+              <span>82K views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+          <div class="video video2">
+            <div class="img"><img src="./image/img2.jpg" /></div>
+            <div class="metadata">
+              <span>
+                HTML기초, React 할 때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 |
+                프론트엔드 개발자 입문편: HTML,CSS,Javascript
+              </span>
+              <span>드림코딩 by 엘리</span>
+              <span>82K views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+          <div class="video video3">
+            <div class="img"><img src="./image/img3.jpg" /></div>
+            <div class="metadata">
+              <span>
+                HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드
+                개발자 입문편: HTML, CSS, Javascript
+              </span>
+              <span>드림코딩 by 엘리</span>
+              <span>82K views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
