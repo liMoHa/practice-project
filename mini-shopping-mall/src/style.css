@@ -7,9 +7,7 @@
   --color-brown: #795548;
   --color-background: #efece6;
   --color-white: white;
-  --shirt-size: 40px;
-  --pants-size: 25px;
-  --skirt-size: 30px;
+  --image-size: 40px;
 }
 
 * {
@@ -61,20 +59,7 @@ header {
 
 .item img {
   margin-right: 10px;
-}
-
-/* 각 이미지 사이즈 조정 */
-.item1 img {
-  width: var(--shirt-size);
-}
-
-.item2 img {
-  width: var(--pants-size);
-  height: calc(var(--pants-size) * 1.5);
-}
-
-.item3 img {
-  width: var(--skirt-size);
+  width: var(--image-size);
 }
 
 /* 각 color 버튼 조정 */
