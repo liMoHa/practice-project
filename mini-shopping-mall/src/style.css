@@ -45,3 +45,55 @@ header {
 .logo img {
   width: 100%;
 }
+
+/* section - filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+/* 버튼 간격 조정 */
+.filter button {
+  padding: calc(var(--padding) / 3);
+}
+
+.item img {
+  margin-right: 10px;
+}
+
+/* 각 이미지 사이즈 조정 */
+.item1 img {
+  width: var(--shirt-size);
+}
+
+.item2 img {
+  width: var(--pants-size);
+  height: calc(var(--pants-size) * 1.5);
+}
+
+.item3 img {
+  width: var(--skirt-size);
+}
+
+/* 각 color 버튼 조정 */
+.color span {
+  border-radius: 2px;
+}
+.color1 span {
+  background-color: var(--color-red);
+  padding: calc(var(--padding) / 4);
+  color: white;
+}
+
+.color2 span {
+  background-color: var(--color-orange);
+  padding: calc(var(--padding) / 4);
+  color: white;
+}
+
+.color3 span {
+  background-color: var(--color-brown);
+  padding: calc(var(--padding) / 4);
+  color: white;
+}
