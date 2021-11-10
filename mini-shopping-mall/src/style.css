@@ -24,4 +24,17 @@ button:hover {
   background-color: transparent;
   cursor: pointer;
 }
-/* */
+
+/* header - logo */
+header {
+  padding-top: var(--padding);
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
