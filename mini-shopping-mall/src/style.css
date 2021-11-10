@@ -4,8 +4,11 @@
   --font-large: 18px;
   --color-red: #e53935;
   --color-ornge: #ff7043;
-  --color-bown: #795548;
+  --color-brown: #795548;
   --color-background: #efece6;
+  --shirt-size: 40px;
+  --pants-size: 25px;
+  --skirt-size: 30px;
 }
 
 * {
