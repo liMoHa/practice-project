@@ -3,7 +3,7 @@
   --font-small: 14px;
   --font-large: 18px;
   --color-red: #e53935;
-  --color-ornge: #ff7043;
+  --color-orange: #ff7043;
   --color-brown: #795548;
   --color-background: #efece6;
   --shirt-size: 40px;
@@ -19,6 +19,10 @@
 
 li {
   list-style: none;
+}
+
+body {
+  background-color: var(--color-background);
 }
 
 button,
