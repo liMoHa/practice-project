@@ -13,3 +13,15 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+button,
+button:hover {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* */
