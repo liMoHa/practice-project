@@ -83,3 +83,25 @@ header {
   padding: calc(var(--padding) / 4);
   color: var(--color-white);
 }
+
+/* section - items-list */
+.items-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 var(--padding);
+}
+
+.items-list__list {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  margin-bottom: calc(var(--padding) / 3);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.items-list__list img {
+  width: var(--image-size);
+  margin-right: 10px;
+}
