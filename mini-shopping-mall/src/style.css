@@ -6,6 +6,7 @@
   --color-orange: #ff7043;
   --color-brown: #795548;
   --color-background: #efece6;
+  --color-white: white;
   --shirt-size: 40px;
   --pants-size: 25px;
   --skirt-size: 30px;
@@ -83,17 +84,17 @@ header {
 .color1 span {
   background-color: var(--color-red);
   padding: calc(var(--padding) / 4);
-  color: white;
+  color: var(--color-white);
 }
 
 .color2 span {
   background-color: var(--color-orange);
   padding: calc(var(--padding) / 4);
-  color: white;
+  color: var(--color-white);
 }
 
 .color3 span {
   background-color: var(--color-brown);
   padding: calc(var(--padding) / 4);
-  color: white;
+  color: var(--color-white);
 }
