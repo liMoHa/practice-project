@@ -90,6 +90,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   padding: 0 var(--padding);
+  font-family: "Roboto", sans-serif;
 }
 
 .items-list__list {
