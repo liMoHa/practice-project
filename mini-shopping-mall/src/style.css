@@ -1,16 +1,20 @@
 :root {
-  --padding: 30px;
-  --font-small: 14px;
-  --font-large: 18px;
+  /* size */
+  --base-space: 10px;
+  --size-logo: 100px;
+  --size-button: 40px;
+  --size-item: 30px;
+  /* color */
   --color-red: #e53935;
   --color-orange: #ff7043;
   --color-brown: #795548;
   --color-background: #efece6;
   --color-white: white;
-  --image-size: 40px;
 }
 
+/* base setting */
 * {
+  font-family: "Roboto";
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -20,89 +24,85 @@ li {
   list-style: none;
 }
 
-body {
-  background-color: var(--color-background);
-}
-
-button,
-button:hover {
+button {
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
-/* header - logo */
-header {
-  padding-top: var(--padding);
-  display: flex;
-  justify-content: center;
-}
-.logo {
-  width: 100px;
-}
-
-.logo img {
-  width: 100%;
-}
-
-/* section - filter */
-.filter {
-  display: flex;
-  justify-content: center;
-  padding: var(--padding);
-}
-
-/* 버튼 간격 조정 */
-.filter button {
-  padding: calc(var(--padding) / 3);
-}
-
-.item img {
-  margin-right: 10px;
-  width: var(--image-size);
-}
-
-/* 각 color 버튼 조정 */
-.color span {
-  border-radius: 2px;
-}
-.color1 span {
-  background-color: var(--color-red);
-  padding: calc(var(--padding) / 4);
-  color: var(--color-white);
-}
-
-.color2 span {
-  background-color: var(--color-orange);
-  padding: calc(var(--padding) / 4);
-  color: var(--color-white);
-}
-
-.color3 span {
-  background-color: var(--color-brown);
-  padding: calc(var(--padding) / 4);
-  color: var(--color-white);
-}
-
-/* section - items-list */
-.items-list {
+body {
+  height: 100vh;
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 0 var(--padding);
-  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
-.items-list__list {
+/* logo */
+body .logo,
+body .logo:hover {
+  width: var(--size-logo);
+  cursor: pointer;
+  margin: calc(var(--base-space) * 2);
+}
+
+/* buttons */
+body .buttons {
   display: flex;
   align-items: center;
-  background-color: var(--color-white);
-  margin-bottom: calc(var(--padding) / 3);
-  padding: 5px 10px;
-  border-radius: 5px;
+  margin-bottom: var(--base-space);
 }
 
-.items-list__list img {
-  width: var(--image-size);
-  margin-right: 10px;
+body .buttons .btn {
+  cursor: pointer;
+  margin-right: calc(var(--base-space) * 2);
+  /* add animation */
+  transition: transform 0.5s ease;
+}
+
+body .buttons .btn:hover {
+  /* add animation */
+  transform: scale(1.1, 1.1);
+}
+
+body .buttons .item img {
+  width: var(--size-button);
+}
+
+body .buttons .color {
+  padding: var(--base-space);
+  border-radius: 4px;
+  color: white;
+}
+
+body .buttons .red {
+  background-color: var(--color-red);
+}
+
+body .buttons .orange {
+  background-color: var(--color-orange);
+}
+
+body .buttons .brown {
+  background-color: var(--color-brown);
+}
+
+/* lists */
+.lists {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /* item이 100vh를 벗어나면 전체가 아닌 item영역 안에서 스크롤됨*/
+}
+
+.lists li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--base-space);
+  padding: calc(var(--base-space) / 2) var(--base-space);
+  background-color: white;
+}
+.lists li img {
+  width: var(--size-item);
+  margin-right: var(--base-space);
 }
