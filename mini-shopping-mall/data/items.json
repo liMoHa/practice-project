@@ -1,0 +1,62 @@
+{"items":[
+    { 
+        "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/brown_s.png"
+    },  
+    { 
+        "gender" : "male", 
+        "size":"small size", 
+        "item":"../src/image/orange_p.png"
+    },  
+    {   "gender" : "male", 
+        "size":"small size", 
+        "item":"../src/image/brown_t.png"
+    },
+    {  "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/red_p.png"
+    },  
+    {   "gender" : "male", 
+        "size":"large size", 
+        "item":"../src/image/brown_s.png"
+    },  
+    { 
+        "gender" : "male", 
+        "size":"small size", 
+        "item":"../src/image/red_p.png"
+    },  
+    {   "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/orange_s.png"
+    },  
+    {   "gender" : "male", 
+        "size":"small size", 
+        "item":"../src/image/brown_t.png"
+    },  
+    {   "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/orange_t.png"
+    },  
+    {   "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/brown_p.png"
+    },
+    {   "gender" : "male", 
+        "size":"small size", 
+        "item":"../src/image/brown_p.png"
+    },
+    {   "gender" : "female", 
+        "size":"large size", 
+        "item":"../src/image/red_t.png"
+    },
+    {   "gender" : "male", 
+        "size":"large size", 
+        "item":"../src/image/brown_s.png"
+    },
+    {   "gender" : "female", 
+        "size":"small size", 
+        "item":"../src/image/orange_p.png"
+    }  
+]
+}
