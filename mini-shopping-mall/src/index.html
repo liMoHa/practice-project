@@ -11,66 +11,33 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
-    <title>MINI SHOPPING MALL</title>
+    <title>MINI SHOPPING MALL-refactoring</title>
   </head>
   <body>
-    <!-- 구조부터 생각하고 만들자. -->
-    <header>
-      <div class="logo">
-        <img src="image/logo.png" />
-      </div>
-    </header>
-
-    <!-- filter -->
-    <section>
-      <div class="filter">
-        <button class="item item1">
-          <img src="image/red_t.png" />
-        </button>
-        <button class="item item2">
-          <img src="image/red_p.png" />
-        </button>
-        <button class="item item3">
-          <img src="image/red_s.png" />
-        </button>
-        <button class="color color1"><span>RED</span></button>
-        <button class="color color2"><span>ORANGE</span></button>
-        <button class="color color3"><span>BROWN</span></button>
-      </div>
-    </section>
-
-    <!-- items info-->
-    <section>
-      <ul class="items-list">
-        <li class="items-list__list list1">
-          <img src="./image/red_p.png" />
-          <span class="genterAndSize">female, large size</span>
-        </li>
-        <li class="items-list__list list2">
-          <img src="./image/brown_t.png" />
-          <span class="genterAndSize">male, small size</span>
-        </li>
-        <li class="items-list__list list3">
-          <img src="./image/orange_s.png" />
-          <span class="genterAndSize">female, large size</span>
-        </li>
-        <li class="items-list__list list4">
-          <img src="./image/brown_p.png" />
-          <span class="genterAndSize">female, small size</span>
-        </li>
-        <li class="items-list__list list5">
-          <img src="./image/red_s.png" />
-          <span class="genterAndSize">female, small size</span>
-        </li>
-        <li class="items-list__list list6">
-          <img src="./image/red_t.png" />
-          <span class="genterAndSize">female, small size</span>
-        </li>
-        <li class="items-list__list list7">
-          <img src="./image/brown_s.png" />
-          <span class="genterAndSize">female, large size</span>
-        </li>
-      </ul>
-    </section>
+    <!-- logo -->
+    <img src="./image/logo.png" alt="logo" class="logo" />
+    <!-- buttons -->
+    <div class="buttons">
+      <button class="btn item tshirt">
+        <img src="./image/red_t.png" alt="red-tshirt" />
+      </button>
+      <button class="btn item skirt">
+        <img src="./image/red_s.png" alt="red-skirt" />
+      </button>
+      <button class="btn item pants">
+        <img src="./image/red_p.png" alt="red-pants" />
+      </button>
+      <button class="btn color red"><span>red</span></button>
+      <button class="btn color orange"><span>orange</span></button>
+      <button class="btn color brown"><span>brown</span></button>
+    </div>
+    <!-- lists -->
+    <ul class="lists">
+      <!-- 동적으로 데이터 받아올 부분 -->
+      <li>
+        <img src="./image/brown_s.png" alt="item-img" />
+        <span>male, large???</span>
+      </li>
+    </ul>
   </body>
 </html>
