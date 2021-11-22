@@ -58,7 +58,7 @@ button:hover {
   border-top-right-radius: 40px;
 }
 
-.container * {
+.container__title * {
   padding-right: var(--base-space);
 }
 
