@@ -50,7 +50,7 @@ button:hover {
 }
 /* title */
 .container__title {
-  flex: 1 1 10%;
+  flex: 1 1 12%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: pink;
   align-items: center;
 }
 
@@ -114,4 +113,38 @@ button:hover {
 
 .container__lists .list__btn img {
   width: 100%;
+}
+
+/* input-form */
+.container__input-form {
+  flex: 1 1 8%;
+  background-color: var(--color-dark-beige);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--base-space);
+  padding: var(--base-space) var(--base-space) var(--base-space)
+    calc(var(--base-space) * 2);
+  width: 95%;
+  border-radius: 40px;
+}
+
+.input-form__input {
+  flex: 1 1 90%;
+  border: none;
+  height: 80%;
+  background-color: transparent;
+}
+
+.input-form__input:focus {
+  outline: none;
+}
+
+.input-form__addBtn {
+  flex: 1 1 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container__input-form img {
+  width: 80%;
 }
