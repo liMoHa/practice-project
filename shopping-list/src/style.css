@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -46,5 +47,34 @@ button:hover {
   background-color: var(--color-light-orange);
 }
 /* title */
+.container__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-beige);
+  width: 100%;
+  height: 10%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.container * {
+  padding-right: var(--base-space);
+}
+
+.container__title > h1:nth-child(1) {
+  color: var(--color-black);
+}
+
+.container__title > h1:nth-child(2) {
+  color: var(--color-orange);
+}
+
+.container__title .fa-carrot {
+  color: var(--color-black);
+  font-size: 30px;
+}
+
 /* lists */
+
 /* input-form */
