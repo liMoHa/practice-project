@@ -1,9 +1,11 @@
 :root {
   /* color  */
   --color-beige: #f5ead9;
+  --color-dark-beige: #f8daae;
   --color-light-orange: #f4bd6f;
   --color-orange: #f1a357;
   --color-black: #262626;
+
   /* size */
   --base-space: 10px;
 }
@@ -48,12 +50,12 @@ button:hover {
 }
 /* title */
 .container__title {
+  flex: 1 1 10%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-beige);
   width: 100%;
-  height: 10%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
@@ -77,10 +79,11 @@ button:hover {
 
 /* lists */
 .container__lists {
+  flex: 1 1 80%;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  background-color: pink;
   align-items: center;
 }
 
@@ -112,5 +115,3 @@ button:hover {
 .container__lists .list__btn img {
   width: 100%;
 }
-
-/* input-form */
