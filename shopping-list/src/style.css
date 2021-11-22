@@ -1,1 +1,22 @@
+:root {
+  /* color  */
+  --color-beige: #f5ead9;
+  --color-light-orange: #f4bd6f;
+  --color-orange: #f1a357;
+  --color-black: #262626;
+  /* size */
+  --base-space: 10px;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+button:hover {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
