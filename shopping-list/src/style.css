@@ -14,9 +14,37 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
 button,
 button:hover {
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
+
+/* container */
+.container {
+  /* 수평, 수직 센터 정렬 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 크기 설정 */
+  width: 400px;
+  height: 600px;
+  /* border */
+  border-radius: 40px;
+  box-shadow: 4px 4px 5px gray;
+  /* color */
+  background-color: var(--color-light-orange);
+}
+/* title */
+/* lists */
+/* input-form */
