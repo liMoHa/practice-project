@@ -5,29 +5,31 @@
 // 모든 이미지가 다 다운로드 된 후에 실행.
 window.addEventListener('load', () => {
     const inputForm = document.querySelector('.input-form__input'); // 부모 노드
-    const button = document.querySelector('.input-form__addBtn');
+    const addbtn = document.querySelector('.input-form__addBtn');
     const lists = document.querySelector('.container__lists');
-    
+
     // 구조를 좋게 작성할 수 있는 방법은 없을까?
     function createNodes(){
         // element 생성
         let list = document.createElement('div');
         let item = document.createElement('p');
-        let button = document.createElement('button');
-        let img = document.createElement('img');
+        let addBtn = document.createElement('button');
+        let img1 = document.createElement('img');
+        let img2 = document.createElement('img');
 
         // 속성 추가
         list.setAttribute('class', "list");
         item.setAttribute('class', "list__item");
-        button.setAttribute('class', "list__btn");
-        img.setAttribute('src', "./img/closed-trash-can.png");
-        img.setAttribute('alt', "closed transh can");
+        addBtn.setAttribute('class', "list__btn");
+        img1.setAttribute('src', "./img/closed-trash-can.png");
+        img2.setAttribute('src', "./img/opened-trash-can.png");
 
         // 자식 노드 추가
         lists.appendChild(list);
         list.appendChild(item);
-        list.appendChild(button);
-        button.appendChild(img);
+        list.appendChild(addBtn);
+        addBtn.appendChild(img1);
+        addBtn.appendChild(img2);
 
         return item;
     }
@@ -43,8 +45,13 @@ window.addEventListener('load', () => {
         else return; // 입력 길이가 0이면 아무것도 안 하고 걍 종료.
     }
 
+    function deleteList(){
+
+
+    }
+
     // 쇼핑 리스트 생성
-    button.addEventListener('click', insertList);
+    addbtn.addEventListener('click', insertList);
     window.addEventListener('keydown', (e) => {
         if(e.key == 'Enter') insertList();
     })

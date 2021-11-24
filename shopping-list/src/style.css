@@ -132,6 +132,19 @@ button:hover {
   width: 100%;
 }
 
+/* hover */
+.container__lists .list__btn img:nth-child(2) {
+  display: none;
+}
+
+.container__lists .list__btn:hover img:nth-child(1) {
+  display: none;
+}
+
+.container__lists .list__btn:hover img:nth-child(2) {
+  display: inline;
+}
+
 /* input-form */
 .container__input-form {
   flex: 1 1 8%;
