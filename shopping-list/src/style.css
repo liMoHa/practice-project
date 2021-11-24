@@ -98,11 +98,11 @@ button:hover {
   align-items: center;
 }
 
-/* 스크롤 바 없애기 */
+/*스크롤 바 없애기 */
 .container__lists::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
-
 .container__lists .list {
   background-color: var(--color-orange);
   display: flex;
