@@ -90,6 +90,7 @@ button:hover {
 
 /* lists */
 .container__lists {
+  overflow-y: scroll;
   flex: 1 1 80%;
   display: flex;
   flex-direction: column;
