@@ -107,6 +107,9 @@ button:hover {
   margin-top: var(--base-space);
 }
 
+/* 여기는 js로 lists의 자식으로 추가될텐데 어떻게 꾸미지?
+그냥 클래스 이름까지 아래와 동일하게 지정해주면
+알아서 내가 정적으로 스타일링 해준 대로 표시되지 않을까? */
 .container__lists .list__item {
   padding: var(--base-space);
   color: var(--color-black);
@@ -116,10 +119,7 @@ button:hover {
 .container__lists .list__btn {
   flex: 1 1 7%;
   margin-right: var(--base-space);
-}
-
-.container__lists .list__btn button {
-  display: flex;
+  display: flex; /* 버튼안 쓰레기통 이미지를 가운데 정렬하기 위함.  */
 }
 
 .container__lists .list__btn img {
