@@ -13,23 +13,24 @@ window.addEventListener('load', () => {
         // element 생성
         let list = document.createElement('div');
         let item = document.createElement('p');
-        let addBtn = document.createElement('button');
+        let deleteBtn = document.createElement('button');
         let img1 = document.createElement('img');
         let img2 = document.createElement('img');
 
         // 속성 추가
         list.setAttribute('class', "list");
         item.setAttribute('class', "list__item");
-        addBtn.setAttribute('class', "list__btn");
+        deleteBtn.setAttribute('class', "list__btn");
         img1.setAttribute('src', "./img/closed-trash-can.png");
         img2.setAttribute('src', "./img/opened-trash-can.png");
+        img2.setAttribute('class', "delete");
 
         // 자식 노드 추가
         lists.appendChild(list);
         list.appendChild(item);
-        list.appendChild(addBtn);
-        addBtn.appendChild(img1);
-        addBtn.appendChild(img2);
+        list.appendChild(deleteBtn);
+        deleteBtn.appendChild(img1);
+        deleteBtn.appendChild(img2);
 
         return item;
     }
@@ -49,9 +50,23 @@ window.addEventListener('load', () => {
         }
     }
 
+    function deleteList(e){
+        //console.log('event: ', e);
+        // 만약 delet버튼에서 이벤트가 발생했다면 실행
+        if(e.target.className === 'delete'){
+            // e.path[2]이걸 지우면 됨.
+            lists.removeChild(e.path[2]);   
+        }
+    }
+
     // 쇼핑 리스트 생성
     addbtn.addEventListener('click', insertList);
     window.addEventListener('keydown', (e) => {
         if(e.key == 'Enter') insertList();
-    })
+    });
+
+    //쇼핑 리스트 제거
+    lists.addEventListener('click', (e) => {
+        deleteList(e);
+    });
 });
