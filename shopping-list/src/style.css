@@ -175,6 +175,12 @@ button:hover {
   justify-content: flex-end;
 }
 
-.container__input-form img {
+.input-form__addBtn img {
   width: 80%;
+}
+
+.input-form__addBtn img:hover {
+  width: 80%;
+  transform: rotate(180deg) scale(1.1);
+  transition: transform 0.5s ease;
 }
