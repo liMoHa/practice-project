@@ -36,18 +36,17 @@ window.addEventListener('load', () => {
 
     function insertList(item){
         // input으로 들어온 문자열이 최소 입력 길이 이상일 때 text로 추가
-        const text = inputForm.value;
+        const text = inputForm.value.trim();
         // 내가 required minlength로 준 값을 가져오는 방법은 없나...
-        if(text.length >= 1){
+        if(text !== ""){
             createNodes().textContent = text;
             inputForm.value ='';
+            inputForm.focus();
         } 
-        else return; // 입력 길이가 0이면 아무것도 안 하고 걍 종료.
-    }
-
-    function deleteList(){
-
-
+        else {
+            inputForm.value ='';
+            return; // 입력 길이가 0이면 아무것도 안 하고 걍 종료.
+        }
     }
 
     // 쇼핑 리스트 생성
