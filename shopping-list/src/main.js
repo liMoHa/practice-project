@@ -32,6 +32,13 @@ window.addEventListener('load', () => {
         deleteBtn.appendChild(img1);
         deleteBtn.appendChild(img2);
 
+        // move scroll bar
+        const y = lists.scrollHeight;
+        console.log(y);
+        lists.scrollTop = y;
+        //lists.scrollTo({top: y, behavior: "smooth"});
+
+
         return item;
     }
 
@@ -68,5 +75,10 @@ window.addEventListener('load', () => {
     //쇼핑 리스트 제거
     lists.addEventListener('click', (e) => {
         deleteList(e);
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        console.clear();
+        console.log(e.pageY);
     });
 });
