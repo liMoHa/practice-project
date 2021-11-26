@@ -32,11 +32,15 @@ window.addEventListener('load', () => {
         deleteBtn.appendChild(img1);
         deleteBtn.appendChild(img2);
 
+        //eventListner등록
+        deleteBtn.addEventListener('click', () =>{
+            lists.removeChild(list);
+        });
+
         // move scroll bar
         const y = lists.scrollHeight;
         console.log(y);
         lists.scrollTop = y;
-        //lists.scrollTo({top: y, behavior: "smooth"});
 
 
         return item;
@@ -57,28 +61,9 @@ window.addEventListener('load', () => {
         }
     }
 
-    function deleteList(e){
-        //console.log('event: ', e);
-        // 만약 delet버튼에서 이벤트가 발생했다면 실행
-        if(e.target.className === 'delete'){
-            // e.path[2]이걸 지우면 됨.
-            lists.removeChild(e.path[2]);   
-        }
-    }
-
     // 쇼핑 리스트 생성
     addbtn.addEventListener('click', insertList);
     window.addEventListener('keydown', (e) => {
         if(e.key == 'Enter') insertList();
-    });
-
-    //쇼핑 리스트 제거
-    lists.addEventListener('click', (e) => {
-        deleteList(e);
-    });
-
-    document.addEventListener('mousemove', (e) => {
-        console.clear();
-        console.log(e.pageY);
     });
 });
