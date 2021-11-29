@@ -8,50 +8,31 @@ window.addEventListener('load', () => {
     const addbtn = document.querySelector('.input-form__addBtn');
     const lists = document.querySelector('.container__lists');
 
+    let id = 0;
     // 구조를 좋게 작성할 수 있는 방법은 없을까?
-    function createNodes(){
-        // element 생성
-        let list = document.createElement('div');
-        let item = document.createElement('p');
-        let deleteBtn = document.createElement('button');
-        let img1 = document.createElement('img');
-        let img2 = document.createElement('img');
-
-        // 속성 추가
+    function createNodes(text){
+        const list = document.createElement('li');
         list.setAttribute('class', "list");
-        item.setAttribute('class', "list__item");
-        deleteBtn.setAttribute('class', "list__btn");
-        img1.setAttribute('src', "./img/closed-trash-can.png");
-        img2.setAttribute('src', "./img/opened-trash-can.png");
-        img2.setAttribute('class', "delete");
-
-        // 자식 노드 추가
-        lists.appendChild(list);
-        list.appendChild(item);
-        list.appendChild(deleteBtn);
-        deleteBtn.appendChild(img1);
-        deleteBtn.appendChild(img2);
-
-        //eventListner등록
-        deleteBtn.addEventListener('click', () =>{
-            lists.removeChild(list);
-        });
-
-        // move scroll bar
-        const y = lists.scrollHeight;
-        console.log(y);
-        lists.scrollTop = y;
-
-
-        return item;
+        list.setAttribute('data-id', id); // 여기 엘리님 어떻게?
+        list.innerHTML = `
+            <p class="list__item">${text}</p>
+            <button class="list__btn">
+                <img src="./img/closed-trash-can.png"/>
+                <img src="./img/opened-trash-can.png" class="delete" data-id=${id} />
+            </button> `;
+        id++;
+        return list;
     }
 
-    function insertList(item){
+    function onAdd(item){
         // input으로 들어온 문자열이 최소 입력 길이 이상일 때 text로 추가
         const text = inputForm.value.trim();
         // 내가 required minlength로 준 값을 가져오는 방법은 없나...
         if(text !== ""){
-            createNodes().textContent = text;
+            const list = createNodes(text);
+            lists.appendChild(list);
+            // move scroll bar
+            list.scrollIntoView({block: "center"});
             inputForm.value ='';
             inputForm.focus();
         } 
@@ -62,8 +43,16 @@ window.addEventListener('load', () => {
     }
 
     // 쇼핑 리스트 생성
-    addbtn.addEventListener('click', insertList);
-    window.addEventListener('keydown', (e) => {
-        if(e.key == 'Enter') insertList();
+    addbtn.addEventListener('click', onAdd);
+    window.addEventListener('keydown', e => {
+        if(e.key == 'Enter') onAdd();
     });
+
+    lists.addEventListener('click', e => {
+    const id = e.target.dataset.id;
+       if(id){
+           const list = document.querySelector(`.list[data-id="${id}"]`);
+           list.remove();
+       }
+    })
 });
