@@ -18,7 +18,6 @@ function itemArr(item){
 }
 
 function displayItems(items){
-    console.log("item:",items);
     let lists = document.querySelector('.lists');
     lists.innerHTML= items.map(item => itemArr(item)).join('');
 }

@@ -90,6 +90,7 @@ body .buttons .brown span {
 /* lists */
 .lists {
   width: 50%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll; /* item이 100vh를 벗어나면 전체가 아닌 item영역 안에서 스크롤됨*/
