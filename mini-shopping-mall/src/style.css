@@ -69,21 +69,21 @@ body .buttons .item img {
   width: var(--size-button);
 }
 
-body .buttons .color {
+body .buttons .color span {
   padding: var(--base-space);
   border-radius: 4px;
   color: white;
 }
 
-body .buttons .red {
+body .buttons .red span {
   background-color: var(--color-red);
 }
 
-body .buttons .orange {
+body .buttons .orange span {
   background-color: var(--color-orange);
 }
 
-body .buttons .brown {
+body .buttons .brown span {
   background-color: var(--color-brown);
 }
 

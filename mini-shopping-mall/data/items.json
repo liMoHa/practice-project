@@ -2,61 +2,88 @@
     { 
         "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/brown_s.png"
+        "item":"../src/image/brown_s.png",
+        "type": "skirt",
+        "color":"brown"
     },  
     { 
         "gender" : "male", 
         "size":"small size", 
-        "item":"../src/image/orange_p.png"
+        "item":"../src/image/orange_p.png",
+        "type": "pants",
+        "color":"orange"
     },  
     {   "gender" : "male", 
         "size":"small size", 
-        "item":"../src/image/brown_t.png"
+        "item":"../src/image/brown_t.png",
+        "type": "tshirt",
+        "color":"brown"
     },
     {  "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/red_p.png"
+        "item":"../src/image/red_p.png",
+        "type": "pants"
     },  
     {   "gender" : "male", 
         "size":"large size", 
-        "item":"../src/image/brown_s.png"
+        "item":"../src/image/brown_s.png",
+        "type": "skirt",
+        "color":"brown"
     },  
     { 
         "gender" : "male", 
         "size":"small size", 
-        "item":"../src/image/red_p.png"
+        "item":"../src/image/red_p.png",
+        "type": "pants",
+        "color":"red"
     },  
     {   "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/orange_s.png"
+        "item":"../src/image/orange_s.png",
+        "type": "skirt",
+        "color":"orange"
     },  
     {   "gender" : "male", 
         "size":"small size", 
-        "item":"../src/image/brown_t.png"
+        "item":"../src/image/brown_t.png",
+        "type": "tshirt",
+        "color":"brown"
     },  
     {   "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/orange_t.png"
+        "item":"../src/image/orange_t.png",
+        "type": "tshirt",
+        "color":"orange"
     },  
     {   "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/brown_p.png"
+        "item":"../src/image/brown_p.png",
+        "type": "pants",
+        "color":"brown"
     },
     {   "gender" : "male", 
         "size":"small size", 
-        "item":"../src/image/brown_p.png"
+        "item":"../src/image/brown_p.png",
+        "type": "pants",
+        "color":"brown"
     },
     {   "gender" : "female", 
         "size":"large size", 
-        "item":"../src/image/red_t.png"
+        "item":"../src/image/red_t.png",
+        "type": "tshirt",
+        "color":"red"
     },
     {   "gender" : "male", 
         "size":"large size", 
-        "item":"../src/image/brown_s.png"
+        "item":"../src/image/brown_s.png",
+        "type": "skirt",
+        "color":"brown"
     },
     {   "gender" : "female", 
         "size":"small size", 
-        "item":"../src/image/orange_p.png"
+        "item":"../src/image/orange_p.png",
+        "type": "pants",
+        "color":"orange"
     }  
 ]
 }

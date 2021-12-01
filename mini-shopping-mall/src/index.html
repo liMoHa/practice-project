@@ -14,23 +14,52 @@
     <title>MINI SHOPPING MALL-refactoring</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <script src="main_sample.js"></script>
     <!-- logo -->
-    <img src="./image/logo.png" alt="logo" class="logo" />
+    <button>
+      <img
+        src="./image/logo.png"
+        alt="logo"
+        class="logo"
+        data-id="all"
+        data-type="btn"
+      />
+    </button>
     <!-- buttons -->
     <div class="buttons">
       <button class="btn item tshirt">
-        <img src="./image/red_t.png" alt="red-tshirt" />
+        <img
+          src="./image/red_t.png"
+          alt="red-tshirt"
+          data-id="tshirt"
+          data-type="btn"
+        />
       </button>
       <button class="btn item skirt">
-        <img src="./image/red_s.png" alt="red-skirt" />
+        <img
+          src="./image/red_s.png"
+          alt="red-skirt"
+          data-id="skirt"
+          data-type="btn"
+        />
       </button>
       <button class="btn item pants">
-        <img src="./image/red_p.png" alt="red-pants" />
+        <img
+          src="./image/red_p.png"
+          alt="red-pants"
+          data-id="pants"
+          data-type="btn"
+        />
       </button>
-      <button class="btn color red"><span>red</span></button>
-      <button class="btn color orange"><span>orange</span></button>
-      <button class="btn color brown"><span>brown</span></button>
+      <button class="btn color red">
+        <span data-id="red" data-type="btn">red</span>
+      </button>
+      <button class="btn color orange">
+        <span data-id="orange" data-type="btn">orange</span>
+      </button>
+      <button class="btn color brown">
+        <span data-id="brown" data-type="btn">brown</span>
+      </button>
     </div>
     <!-- lists -->
     <ul class="lists">
