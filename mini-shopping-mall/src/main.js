@@ -32,7 +32,6 @@ function filterCloths(e){
                     return item['type'] === e.target.dataset.id || item['color'] === e.target.dataset.id;
                 }
             });
-            console.log("?:",filteredItems);
             displayItems(filteredItems); // display filtered clothes
         });
     }
