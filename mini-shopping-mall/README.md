@@ -8,3 +8,6 @@
 
 메인 로고 포함 7가지 버튼을 클릭하면 각 버튼에 맞게 옷들이 필터링 돼서 화면에 표시된다. 메인 로고는 전체 옷을 표시하는 버튼이다.
 ![display](image/miniShopImg.png)
+
+## 🔗실행링크
+https://limoha.github.io/Ellie-Youtube/mini-shopping-mall/src/
