@@ -5,3 +5,6 @@ Shoppng List를 구현하기 js로 이벤트를 처리하고 새로운 노드를
 ## 결과물
 
 ![layout](./shoppingListImg.png)
+
+## 🔗실행링크
+https://limoha.github.io/Ellie-Youtube/shopping-list/src/
