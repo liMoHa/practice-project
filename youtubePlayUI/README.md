@@ -9,3 +9,6 @@
 ## layout2
 
 ![layout2](./youtube_layout2.png)
+
+## 🔗실행링크
+https://limoha.github.io/Ellie-Youtube/youtubePlayUI/src/
